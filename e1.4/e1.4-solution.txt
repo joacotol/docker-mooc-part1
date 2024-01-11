@@ -1,0 +1,17 @@
+Command I used to start the process:
+
+docker run -d -it ubunutu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl htpp://$website; done'
+
+
+Command I used to enter the container using a different terminal:
+
+docker exec -it ubuntu bash
+
+
+Command I used inside the container to install missing dependencies:
+
+apt update && apt install -y curl
+
+
+Website I used to return the right information:
+helsinki.fi

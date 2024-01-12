@@ -7,5 +7,5 @@ RUN apt update
 RUN apt install -y curl
 RUN chmod +x script.sh
 
-CMD ./script.sh
+ENTRYPOINT ["./script.sh"]
 
